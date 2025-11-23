@@ -3,8 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 
 // 記事ファイルが置いてあるディレクトリ
-const postsDirectory = path.join(process.cwd(), 'src/content/posts');
-
+const postsDirectory = path.join(process.cwd(), 'content/posts');
 // 記事のメタデータ（型定義）
 export type PostMeta = {
   slug: string;
