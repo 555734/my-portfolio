@@ -11,10 +11,9 @@ export default function Home() {
         <ul style={{ listStyle: 'none', padding: 0 }}>
           {/* さっき作ったブログ一覧ページへのリンク */}
           <li style={{ margin: '10px 0' }}>
-            <Link href="/blog" style={{ color: 'blue', textDecoration: 'underline' }}>
-              Blog (技術ブログ)
-            </Link>
-          </li>
+<Link href="/blog" className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition">
+  Blogを読む
+</Link>          </li>
           <li style={{ margin: '10px 0' }}>
             <Link href="/about" style={{ color: 'gray' }}>
               About (準備中)
