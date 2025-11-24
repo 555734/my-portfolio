@@ -2,23 +2,22 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    // 背景を青色のグラデーションに変更し、文字色を白にする
-    <header className="sticky top-0 z-50 w-full border-b border-primary-600/30 bg-gradient-primary text-white shadow-md backdrop-blur-sm supports-[backdrop-filter]:bg-primary-600/90">
-      <div className="mx-auto flex h-16 max-w-3xl items-center justify-between px-4">
-        {/* ロゴエリア */}
+    // 修正: 白背景ベースのすりガラス効果に変更
+    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md">
+      {/* コンテンツ幅を max-w-5xl に広げる */}
+      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
         <Link 
           href="/" 
-          className="text-xl font-bold tracking-tight transition-colors hover:text-primary-100"
+          className="text-xl font-bold tracking-tight text-gray-900 transition-colors hover:text-primary-600"
         >
           My Portfolio
         </Link>
 
-        {/* ナビゲーション */}
-        <nav className="flex gap-6 text-sm font-medium text-primary-50">
-          <Link href="/blog" className="transition-colors hover:text-white">
+        <nav className="flex gap-6 text-sm font-medium text-gray-600">
+          <Link href="/blog" className="transition-colors hover:text-primary-600">
             Blog
           </Link>
-          <Link href="/about" className="transition-colors hover:text-white">
+          <Link href="/about" className="transition-colors hover:text-primary-600">
             About
           </Link>
         </nav>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import "highlight.js/styles/github-dark.css"; // シンタックスハイライト
+import "highlight.js/styles/github-dark.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -19,12 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      {/* min-h-screen: 画面いっぱいに広げる, bg-gray-50: 薄いグレー背景 */}
       <body className={`${inter.className} min-h-screen flex flex-col bg-gray-50 text-gray-900`}>
         <Header />
         
-        {/* max-w-3xl: 最大幅を制限, mx-auto: 中央寄せ */}
-        <main className="flex-1 w-full max-w-3xl mx-auto px-4 py-8">
+        {/* 修正: ここでの max-w-3xl を削除し、flex-1 のみにする */}
+        <main className="flex-1 w-full">
           {children}
         </main>
         
