@@ -16,7 +16,7 @@ export default function Home() {
 </Link>          </li>
           <li style={{ margin: '10px 0' }}>
             <Link href="/about" style={{ color: 'gray' }}>
-              About (準備中)
+              About
             </Link>
           </li>
         </ul>
